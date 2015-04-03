@@ -1,0 +1,8 @@
+echo $CATALINA_HOME 
+/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18:/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/lib/servlet-api.jar
+
+echo $JAVA_HOME 
+/usr/lib/jvm/java-1.7.0-openjdk-amd64
+
+javac -d WEB-INF/classes -classpath lib/jus.util.jar:lib/ojdbc14.jar:$CATALINA_HOME -sourcepath src src/*/*.java
+javac -d WEB-INF/classes -classpath lib/jus.util.jar:lib/ojdbc14.jar:$CATALINA_HOME -sourcepath src src/*.java

@@ -6,8 +6,13 @@
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
+import java.util.Vector;
 
-import ../BD/src.*;
+import modele.*;
+import accesBD.*;
+import application.*;
+import exceptions.*;
+import utils.*;
 /**
  * Proramme Servlet.
  *
@@ -46,20 +51,41 @@ public class ProgrammeServlet extends HttpServlet {
 	  // R�cup�ration de la liste de tous les spectacles de la saison.
 	  // Puis construction dynamique d'une page web d�crivant ces spectacles.
 	  //recuperation : 
+	  try{
+		  Utilisateur user = Utilitaires.Identification();
+		  if(user!=null){
+			  
+			  try{
 
-	  Vector<Categorie> res = Utilitaires.AfficherCategories();
-	  if (res.isEmpty()) {
-			out.println(" Liste vide ");
-		} else {
-			out.print("<p><i><font color=\"#FFFFFF\">")
-			for (int i = 0; i < res.size(); i++) {
-				out.println(res.elementAt(i).getCategorie() + " (prix : "
-						+ res.elementAt(i).getPrix() + ")");
-			}
-			out.print("</i></p>")
-		}
+				  Vector<Spectacle> resultat=  BDSpectacles.executerRequete(user,"select * from LesSpectacles");
+				//  Vector<Categorie> resultat= BDCategories.getCategorie(user);
+				  if (resultat.isEmpty()) {
+						out.println(" Liste vide ");
+					} else {
+						out.print("<p><i><font color=\"#FFFFFF\">");
+						for (int i = 0; i < resultat.size(); i++) {
+							out.println(resultat.elementAt(i).getNomS() + " (numS: "+ resultat.elementAt(i).getNumS()+")"+ "</i></p><br>");
+							out.println("<p><i><font color=\"#FFFFFF\">");
+						}
+						out.println("</i></p>");
+					}
+			  } catch (SpectacleException e) {
+					out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans l'affichage des spectacles : "
+							+ e.getMessage()+"</i></p>");
+			  }
+			  
+		  }
+	  }catch ( ExceptionConnexion e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans la connexion : "
+					+ e.getMessage()+"</i></p>");
+	  }catch (ExceptionUtilisateur e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur avec l'utilisateur : "
+					+ e.getMessage()+"</i></p>");
+	  }catch(IOException e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans IO exception : "
+					+ e.getMessage()+"</i></p>");
+	  }
 	  
-	  out.println("<p><i><font color=\"#FFFFFF\">A compl&eacute;ter</i></p>");
 	  out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
 
 	  out.println("<hr><p><font color=\"#FFFFFF\"><a href=\"/index.html\">Accueil</a></p>");

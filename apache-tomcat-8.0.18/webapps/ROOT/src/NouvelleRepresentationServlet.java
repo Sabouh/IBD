@@ -6,7 +6,11 @@
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
-
+import modele.*;
+import accesBD.*;
+import application.*;
+import exceptions.*;
+import utils.*;
 /**
  * NouvelleRepresentation Servlet.
  *
@@ -38,7 +42,7 @@ public class NouvelleRepresentationServlet extends HttpServlet {
 
 	  res.setContentType("text/html");
 
-	  out.println("<HEAD><TITLE> Ajouter une nouvelle représentation </TITLE></HEAD>");
+	  out.println("<HEAD><TITLE> Ajouter une nouvelle reprï¿½sentation </TITLE></HEAD>");
 	  out.println("<BODY bgproperties=\"fixed\" background=\"/images/rideau.JPG\">");
 	  out.println("<font color=\"#FFFFFF\"><h1> Ajouter une nouvelle repr&eacute;sentation </h1>");
 
@@ -64,9 +68,9 @@ public class NouvelleRepresentationServlet extends HttpServlet {
             	out.println("</form>");
 	  } else {
 	  	// TO DO
-		// Transformation des paramètres vers les types adéquats.
-	  	// Ajout de la nouvelle représentation.
-	  	// Puis construction dynamique d'une page web de réponse.
+		// Transformation des paramï¿½tres vers les types adï¿½quats.
+	  	// Ajout de la nouvelle reprï¿½sentation.
+	  	// Puis construction dynamique d'une page web de rï¿½ponse.
 	  	out.println("<p><i><font color=\"#FFFFFF\">A compl&eacute;ter</i></p>");
 	  	out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
 	  }
@@ -104,7 +108,7 @@ public class NouvelleRepresentationServlet extends HttpServlet {
     */
 
     public String getServletInfo() {
-        return "Ajoute une représentation à une date donnée pour un spectacle existant";
+        return "Ajoute une reprï¿½sentation ï¿½ une date donnï¿½e pour un spectacle existant";
     }
 
 }

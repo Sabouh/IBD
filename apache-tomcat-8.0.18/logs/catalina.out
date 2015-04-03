@@ -3523,3 +3523,422 @@ Caused by: java.net.BindException: Adresse déjà utilisée
 31-Mar-2015 17:13:04.685 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 31-Mar-2015 17:13:04.694 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
 31-Mar-2015 17:13:04.695 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 932 ms
+31-Mar-2015 19:30:10.264 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+31-Mar-2015 19:30:10.328 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+31-Mar-2015 19:30:10.379 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+31-Mar-2015 19:30:10.421 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+31-Mar-2015 19:30:10.423 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+31-Mar-2015 19:30:10.424 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+31-Mar-2015 19:30:10.425 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 14:12:03.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 14:12:03.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 14:12:03.556 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 14:12:03.776 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 14:12:03.790 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 14:12:03.792 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 14:12:03.794 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 14:12:03.794 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1018 ms
+01-Apr-2015 14:12:03.825 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 14:12:03.826 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 14:12:03.889 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 14:12:04.481 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 592 ms
+01-Apr-2015 14:12:04.483 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 14:12:04.496 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 14:12:04.496 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 701 ms
+01-Apr-2015 15:27:04.217 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:27:04.217 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:27:04.271 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:27:04.321 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:27:04.341 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:27:04.344 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:27:04.345 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:27:04.345 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:27:08.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 15:27:08.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:27:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 15:27:08.437 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 15:27:08.586 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:27:08.599 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:27:08.602 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:27:08.603 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:27:08.604 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 628 ms
+01-Apr-2015 15:27:08.624 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 15:27:08.624 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 15:27:08.634 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 15:27:09.248 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 15:27:09.327 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 693 ms
+01-Apr-2015 15:27:09.328 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:27:09.333 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:27:09.333 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 729 ms
+01-Apr-2015 15:30:44.050 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:30:44.051 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:30:44.106 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:30:44.156 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:30:44.172 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:30:44.173 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:30:44.174 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:30:44.174 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:30:46.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 15:30:46.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 15:30:46.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 15:30:46.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 15:30:46.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:30:46.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:30:46.255 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 15:30:46.255 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 15:30:46.357 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:30:46.371 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:30:46.373 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:30:46.374 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:30:46.375 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 474 ms
+01-Apr-2015 15:30:46.395 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 15:30:46.395 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 15:30:46.404 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 15:30:46.847 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 15:30:46.886 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 481 ms
+01-Apr-2015 15:30:46.888 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:30:46.893 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:30:46.898 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 523 ms
+01-Apr-2015 15:32:36.979 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:32:36.980 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:32:37.034 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:32:37.084 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:32:37.097 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:32:37.100 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:32:37.101 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:32:37.101 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:32:44.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 15:32:44.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 15:32:44.676 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 15:32:44.773 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:32:44.786 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:32:44.788 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:32:44.790 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:32:44.790 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 459 ms
+01-Apr-2015 15:32:44.811 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 15:32:44.811 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 15:32:44.820 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 15:32:45.244 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 15:32:45.284 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 464 ms
+01-Apr-2015 15:32:45.286 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:32:45.291 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:32:45.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 500 ms
+Connexion reussie...
+01-Apr-2015 15:33:29.374 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:33:29.375 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:33:29.426 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:33:29.477 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:33:29.491 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [AWT-EventQueue-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.awt.EventQueue.getNextEvent(EventQueue.java:543)
+ java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+ java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+ java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+ java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+01-Apr-2015 15:33:29.497 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:33:29.498 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:33:29.498 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:33:29.499 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:33:31.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:33:31.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 15:33:31.313 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 15:33:31.412 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:33:31.426 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:33:31.432 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:33:31.435 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:33:31.436 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 490 ms
+01-Apr-2015 15:33:31.461 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 15:33:31.461 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 15:33:31.471 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 15:33:31.922 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 15:33:31.962 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 491 ms
+01-Apr-2015 15:33:31.964 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:33:31.969 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:33:31.970 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 533 ms
+Connexion reussie...
+Connexion reussie...
+01-Apr-2015 15:34:21.823 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:34:21.824 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:34:21.876 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:34:21.927 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:34:21.940 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [AWT-EventQueue-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.awt.EventQueue.getNextEvent(EventQueue.java:543)
+ java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+ java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+ java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+ java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+01-Apr-2015 15:34:21.944 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:34:21.944 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:34:21.945 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:34:21.946 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:34:23.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 15:34:23.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 15:34:23.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 15:34:23.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 15:34:23.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:34:23.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 15:34:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 15:34:23.815 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 15:34:23.922 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:34:23.936 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:34:23.938 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:34:23.940 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 15:34:23.940 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 485 ms
+01-Apr-2015 15:34:23.961 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 15:34:23.961 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 15:34:23.970 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 15:34:24.429 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 15:34:24.469 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 498 ms
+01-Apr-2015 15:34:24.471 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:34:24.475 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:34:24.479 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 538 ms
+Connexion reussie...
+Connexion reussie...
+01-Apr-2015 15:36:43.958 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 15:36:43.959 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:36:44.010 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:36:44.061 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 15:36:44.075 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [AWT-EventQueue-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.awt.EventQueue.getNextEvent(EventQueue.java:543)
+ java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+ java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+ java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+ java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+01-Apr-2015 15:36:44.079 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:36:44.080 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 15:36:44.080 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 15:36:44.081 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:15:23.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 16:15:23.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 16:15:23.784 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 16:15:23.886 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:15:23.901 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:15:23.903 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:15:23.905 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:15:23.905 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 519 ms
+01-Apr-2015 16:15:23.926 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 16:15:23.926 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 16:15:23.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 16:15:24.557 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 16:15:24.651 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 708 ms
+01-Apr-2015 16:15:24.653 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:15:24.658 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:15:24.664 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 759 ms
+Connexion reussie...
+01-Apr-2015 16:18:54.705 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+01-Apr-2015 16:18:54.706 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [] a démarré
+01-Apr-2015 16:18:54.715 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [AWT-EventQueue-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.awt.EventQueue.getNextEvent(EventQueue.java:543)
+ java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+ java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+ java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+ java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+01-Apr-2015 16:18:55.118 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+01-Apr-2015 16:19:15.124 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+01-Apr-2015 16:19:15.124 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [] a démarré
+01-Apr-2015 16:19:15.285 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+01-Apr-2015 16:19:53.149 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 16:19:53.150 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:19:53.202 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:19:53.253 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 16:19:53.291 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:19:53.292 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:19:53.292 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:19:53.293 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:19:55.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:19:55.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 16:19:55.638 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 16:19:55.805 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:19:55.820 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:19:55.822 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:19:55.824 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:19:55.824 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 922 ms
+01-Apr-2015 16:19:55.845 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 16:19:55.845 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 16:19:55.854 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 16:19:56.336 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 16:19:56.378 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 523 ms
+01-Apr-2015 16:19:56.380 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:19:56.384 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:19:56.390 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 566 ms
+Connexion reussie...
+01-Apr-2015 16:20:18.476 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Apr-2015 16:20:18.477 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:20:18.528 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:20:18.578 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+01-Apr-2015 16:20:18.591 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [AWT-EventQueue-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.awt.EventQueue.getNextEvent(EventQueue.java:543)
+ java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+ java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+ java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+ java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+ java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+01-Apr-2015 16:20:18.594 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:20:18.595 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:20:18.595 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:20:18.596 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:20:38.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.13.0-24-generic
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-7-openjdk-amd64/jre
+01-Apr-2015 16:20:38.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_55-b14
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/conf/logging.properties
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/endorsed
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/temp
+01-Apr-2015 16:20:38.206 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+01-Apr-2015 16:20:38.306 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:20:38.320 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:20:38.322 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:20:38.324 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Apr-2015 16:20:38.324 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 477 ms
+01-Apr-2015 16:20:38.345 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+01-Apr-2015 16:20:38.345 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+01-Apr-2015 16:20:38.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT de l'application web
+01-Apr-2015 16:20:38.803 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Apr-2015 16:20:38.843 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/webapps/ROOT has finished in 489 ms
+01-Apr-2015 16:20:38.845 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Apr-2015 16:20:38.850 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+01-Apr-2015 16:20:38.853 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 528 ms
+Connexion reussie...
+Connexion reussie...
