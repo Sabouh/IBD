@@ -63,7 +63,7 @@ public class Utilitaires {
 
 	}
 	
-	public static Vector<Categorie> AfficherCategories() throws IOException {
+	public static Vector<Categorie> AfficherCategories() throws IOException{
 		Vector<Categorie> res = new Vector<Categorie>();
 		Utilisateur user = new Utilisateur("sabine");
 		try {
@@ -207,22 +207,22 @@ public class Utilitaires {
 		String login;
 		String passwd;
 		// lecture des parametres de connexion dans connection.conf
-	/*	Properties p = new Properties();
+		Properties p = new Properties();
 		InputStream is = null;
 		is = new FileInputStream(utils.Constantes.Config);
 		p.load(is);
 		login = p.getProperty("user");
-		passwd = p.getProperty("mdp");*/
-		login = "bouhdids";
-		passwd = "bd2015";
-		/*
+		passwd = p.getProperty("mdp");
+	//	login = "bouhdids";
+	//	passwd = "bd2015";
+		
 		if (login == null || login.equals("MYUSERNAME")) {
 			UserNamePasswordDialog login_dialog = new UserNamePasswordDialog(
 					new Frame(""));
 			login_dialog.setVisible(true);
 			login = login_dialog.getUid();
 			passwd = login_dialog.getPwd();
-		}*/
+		}
 		/* test de la connexion */
 		Connection conn = BDConnexion.getConnexion(login, passwd);
 		if (conn != null) {

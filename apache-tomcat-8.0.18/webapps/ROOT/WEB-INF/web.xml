@@ -13,7 +13,7 @@
 --> 
 - <servlet> 
 <servlet-name>ReservationServlet</servlet-name> 
-<servlet-class>REservationServlet</servlet-class> 
+<servlet-class>ReservationServlet</servlet-class> 
 </servlet>
 
 - <servlet> 
