@@ -6,42 +6,42 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import exceptions.RepresentationException;
+import exceptions.TicketException;
 import exceptions.ExceptionConnexion;
 
-import modele.Representation;
+import modele.Tickets;
 import modele.Utilisateur;
 
-public class BDRepresentations {
+public class BDTickets {
 
-	public BDRepresentations () {
+	public BDTickets () {
 		
 	}
 	/**
 	 * retourne la liste des catégories définies dans la bd
 	 * @param Utilisateur
-	 * @return Vector<Representation>
-	 * @throws RepresentationException
+	 * @return Vector<Ticket>
+	 * @throws TicketException
 	 * @throws ExceptionConnexion
 	 */
-	public static Vector<Representation> getRepresentation (Utilisateur user)
-	throws RepresentationException, ExceptionConnexion {
-		Vector<Representation> res = new Vector<Representation>();
+	public static Vector<Tickets> getTicket (Utilisateur user)
+	throws TicketException, ExceptionConnexion {
+		Vector<Tickets> res = new Vector<Tickets>();
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "select numS, dateRep from LesRepresentations order by dateRep";
-		//requete = "select * from LesRepresentations";
+		requete = "select * from LesTickets order by noSerie";
+		//requete = "select * from LesTickets";
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			while (rs.next()) {
-				res.addElement(new Representation (rs.getInt(1), rs.getString(2)));
+				res.addElement(new Tickets(rs.getInt(1),rs.getInt(2), rs.getString(3),rs.getInt(4),rs.getInt(5),rs.getString(6)));
 			}
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new TicketException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -51,21 +51,21 @@ public class BDRepresentations {
 	
 	
 	
-	public static void setRepresentation (Utilisateur user, int num, String date)
-	throws RepresentationException, ExceptionConnexion {
+	public static void setTicket (Utilisateur user, int num, String n)
+	throws TicketException, ExceptionConnexion {
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "insert into LesRepresentation values ('"+num+"', '"+date+"')";
+		requete = "insert into LesTickets values ('"+num+"', '"+n+"')";
 		System.out.println(requete);
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new TicketException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -74,8 +74,8 @@ public class BDRepresentations {
 	}
 	
 	
-	public static Vector<Representation> executerRequete(Utilisateur user, String requete)throws RepresentationException, ExceptionConnexion{
-		Vector<Representation> res = new Vector<Representation>();		
+	public static Vector<Tickets> executerRequete(Utilisateur user, String requete)throws TicketException, ExceptionConnexion{
+		Vector<Tickets> res = new Vector<Tickets>();		
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
@@ -88,12 +88,12 @@ public class BDRepresentations {
 				return null;
 			}else{
 				while (rs.next()) {
-					res.addElement(new Representation (rs.getInt(1), rs.getString(2)));
+					res.addElement(new Tickets (rs.getInt(1),rs.getInt(2), rs.getString(3),rs.getInt(4),rs.getInt(5),rs.getString(6)));
 				}
 			}
 			
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new TicketException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}

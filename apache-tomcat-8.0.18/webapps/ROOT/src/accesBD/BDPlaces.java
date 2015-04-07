@@ -6,42 +6,42 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import exceptions.RepresentationException;
+import exceptions.PlaceException;
 import exceptions.ExceptionConnexion;
 
-import modele.Representation;
+import modele.Place;
 import modele.Utilisateur;
 
-public class BDRepresentations {
+public class BDPlaces {
 
-	public BDRepresentations () {
+	public BDPlaces () {
 		
 	}
 	/**
 	 * retourne la liste des catégories définies dans la bd
 	 * @param Utilisateur
-	 * @return Vector<Representation>
-	 * @throws RepresentationException
+	 * @return Vector<Place>
+	 * @throws PlaceException
 	 * @throws ExceptionConnexion
 	 */
-	public static Vector<Representation> getRepresentation (Utilisateur user)
-	throws RepresentationException, ExceptionConnexion {
-		Vector<Representation> res = new Vector<Representation>();
+	public static Vector<Place> getPlace (Utilisateur user)
+	throws PlaceException, ExceptionConnexion {
+		Vector<Place> res = new Vector<Place>();
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "select numS, dateRep from LesRepresentations order by dateRep";
-		//requete = "select * from LesRepresentations";
+		requete = "select noPlace, noRang, numZ from LesPlaces order by noPlace";
+		//requete = "select * from LesPlaces";
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			while (rs.next()) {
-				res.addElement(new Representation (rs.getInt(1), rs.getString(2)));
+				res.addElement(new Place(rs.getInt(1),rs.getInt(2), rs.getInt(3)));
 			}
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new PlaceException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -51,21 +51,21 @@ public class BDRepresentations {
 	
 	
 	
-	public static void setRepresentation (Utilisateur user, int num, String date)
-	throws RepresentationException, ExceptionConnexion {
+	public static void setPlace (Utilisateur user, int num, String n)
+	throws PlaceException, ExceptionConnexion {
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "insert into LesRepresentation values ('"+num+"', '"+date+"')";
+		requete = "insert into LesPlaces values ('"+num+"', '"+n+"')";
 		System.out.println(requete);
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new PlaceException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -74,8 +74,8 @@ public class BDRepresentations {
 	}
 	
 	
-	public static Vector<Representation> executerRequete(Utilisateur user, String requete)throws RepresentationException, ExceptionConnexion{
-		Vector<Representation> res = new Vector<Representation>();		
+	public static Vector<Place> executerRequete(Utilisateur user, String requete)throws PlaceException, ExceptionConnexion{
+		Vector<Place> res = new Vector<Place>();		
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
@@ -88,12 +88,12 @@ public class BDRepresentations {
 				return null;
 			}else{
 				while (rs.next()) {
-					res.addElement(new Representation (rs.getInt(1), rs.getString(2)));
+					res.addElement(new Place (rs.getInt(1),rs.getInt(2), rs.getInt(3)));
 				}
 			}
 			
 		} catch (SQLException e) {
-			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
+			throw new PlaceException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}

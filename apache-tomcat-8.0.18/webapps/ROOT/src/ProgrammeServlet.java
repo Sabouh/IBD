@@ -5,8 +5,13 @@
  */
 import javax.servlet.*;
 import javax.servlet.http.*;
+
 import java.io.IOException;
 import java.util.Vector;
+
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 import modele.*;
 import accesBD.*;
@@ -66,6 +71,51 @@ public class ProgrammeServlet extends HttpServlet {
 						for (int i = 0; i < resultat.size(); i++) {
 							out.println(resultat.elementAt(i).getNomS() + " (numS: "+ resultat.elementAt(i).getNumS()+")"+ "</i></p><br>");
 							out.println("<p><i><font color=\"#FFFFFF\">");
+							try{
+								Vector<Representation> rep = BDRepresentations.executerRequete(user,"select * from LesRepresentations where numS="+resultat.elementAt(i).getNumS());
+									for(int j=0;j<rep.size();j++){
+										out.println(rep.elementAt(j).getDate() + " (numS: "+ rep.elementAt(j).getNumS()+")"+ "</i></p><br>");
+										try{
+											Vector<Place> place = BDPlaces.executerRequete(user,"select noPlace, noRang, numZ from LesPlaces order by noPlace");
+											//MaDate date = new MaDate(rep.elementAt(j).getDate());
+
+							                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+							               
+							                java.util.Date date = sdf.parse(rep.elementAt(j).getDate());
+							                
+							               
+							                java.sql.Date sqlDate = new Date(date.getTime());
+											Vector<Tickets> ti = BDTickets.executerRequete(user,"select * from LesTickets where dateRep =to_date('"+sqlDate+"')");
+											//Vector<Tickets> ti = BDTickets.executerRequete(user,"select * from LesTickets");
+											/*for(int k=0;k<rep.size();k++){
+												if(ti.elementAt(k).getDateRep())
+												out.println(ti.elementAt(k).getDateRep());
+												out.println("<p><i><font color=\"#FFFFFF\">");
+												
+											}*/
+											//out.println(ti.elementAt(0).getDateRep());
+											out.println("<p><i><font color=\"#FFFFFF\">");
+											out.println("nb places "+place.size());
+											out.println(" nb tickets "+ti.size());
+											//out.println("Nb Place = "+(place.size()-ti.size()));
+										}catch(PlaceException e){
+											out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans table des places : "
+													+ e.getMessage()+"</i></p>");
+											
+										}catch(TicketException e){
+											out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans table des tickets : "
+													+ e.getMessage()+"</i></p>");											
+										}catch(ParseException e ){
+						                	out.println("PROBLEME PARSE");
+						                }
+										out.println("<p><i><font color=\"#FFFFFF\">");
+										
+									}
+							}catch(RepresentationException e){
+								out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans l'affichage des representations : "
+										+ e.getMessage()+"</i></p>");
+								
+							}
 						}
 						out.println("</i></p>");
 					}
@@ -85,7 +135,9 @@ public class ProgrammeServlet extends HttpServlet {
 			out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans IO exception : "
 					+ e.getMessage()+"</i></p>");
 	  }
-	  
+
+      out.println("<a href=\"/servlet/NouvelleRepresentationServlet\">Ajouter une representation</a>"); 
+      
 	  out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
 
 	  out.println("<hr><p><font color=\"#FFFFFF\"><a href=\"/index.html\">Accueil</a></p>");

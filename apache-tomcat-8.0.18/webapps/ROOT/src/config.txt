@@ -1,5 +1,6 @@
 echo $CATALINA_HOME 
-export CATALINA_HOME=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18:/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/lib/servlet-api.jar
+#export CATALINA_HOME=/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18:/home/b/bouhdids/Documents/M1INFO/S2/IBD/PROJET/apache-tomcat-8.0.18/lib/servlet-api.jar
+export CATALINA_HOME=/home/b/bouhdids/Documents/M1INFO/S2/IBD/IBD/apache-tomcat-8.0.18:/home/b/bouhdids/Documents/M1INFO/S2/IBD/IBD/apache-tomcat-8.0.18/lib/servlet-api.jar
 
 echo $JAVA_HOME 
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64

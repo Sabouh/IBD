@@ -42,9 +42,9 @@ public class NouvelleRepresentationServlet extends HttpServlet {
 
 	  res.setContentType("text/html");
 
-	  out.println("<HEAD><TITLE> Ajouter une nouvelle représentation </TITLE></HEAD>");
+	  out.println("<HEAD><TITLE> Ajouter une nouvelle representation </TITLE></HEAD>");
 	  out.println("<BODY bgproperties=\"fixed\" background=\"/images/rideau.JPG\">");
-	  out.println("<font color=\"#FFFFFF\"><h1> Ajouter une nouvelle représentation </h1>");
+	  out.println("<font color=\"#FFFFFF\"><h1> Ajouter une nouvelle representation </h1>");
 
 	  numS		= req.getParameter("numS");
 	  dateS		= req.getParameter("date");
@@ -71,13 +71,31 @@ public class NouvelleRepresentationServlet extends HttpServlet {
 		// Transformation des paramï¿½tres vers les types adï¿½quats.
 	  	// Ajout de la nouvelle reprï¿½sentation.
 	  	// Puis construction dynamique d'une page web de rï¿½ponse.
-		Utilisateur user = Utilitaires.Identification();
-		if(user!=null){
-			//A TERMINER
-			BDRepresentations.setRepresentation(user,Integer.parseInt(numS),dateS);
-		}
-	  	out.println("<p><i><font color=\"#FFFFFF\">A compl&eacute;ter</i></p>");
-	  	out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
+		try{
+			Utilisateur user = Utilitaires.Identification();
+			if(user!=null){
+				//A TERMINER
+				try{
+					BDRepresentations.setRepresentation(user,Integer.parseInt(numS),dateS);
+				}catch(RepresentationException e){
+					out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans l'affichage des representations : "
+							+ e.getMessage()+"</i></p>");
+					
+				}
+			}
+		  	out.println("<p><i><font color=\"#FFFFFF\">A compl&eacute;ter</i></p>");
+		  	out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
+		  	
+		}catch ( ExceptionConnexion e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans la connexion : "
+					+ e.getMessage()+"</i></p>");
+	    }catch (ExceptionUtilisateur e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur avec l'utilisateur : "
+					+ e.getMessage()+"</i></p>");
+	    }catch(IOException e){
+			out.println("<p><i><font color=\"#FFFFFF\"> Erreur dans IO exception : "
+					+ e.getMessage()+"</i></p>");
+	    }
 	  }
 
 	  out.println("<hr><p><font color=\"#FFFFFF\"><a href=\"/admin/admin.html\">Page d'administration</a></p>");
@@ -113,7 +131,7 @@ public class NouvelleRepresentationServlet extends HttpServlet {
     */
 
     public String getServletInfo() {
-        return "Ajoute une reprï¿½sentation ï¿½ une date donnï¿½e pour un spectacle existant";
+        return "Ajoute une representation a une date donnee pour un spectacle existant";
     }
 
 }

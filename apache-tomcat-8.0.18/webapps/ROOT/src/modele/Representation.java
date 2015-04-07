@@ -10,7 +10,7 @@ public class Representation {
 		this.date = date;
 	}
 
-	public int getnumS(){
+	public int getNumS(){
 		return this.numS;
 	}
 	
