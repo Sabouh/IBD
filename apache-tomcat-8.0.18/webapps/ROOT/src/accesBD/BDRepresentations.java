@@ -6,42 +6,42 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import exceptions.CategorieException;
+import exceptions.SpectacleException;
 import exceptions.ExceptionConnexion;
 
-import modele.Categorie;
+import modele.Spectacle;
 import modele.Utilisateur;
 
-public class BDCategories {
+public class BDRepresentations {
 
-	public BDCategories () {
+	public BDRepresentations () {
 		
 	}
 	/**
 	 * retourne la liste des catégories définies dans la bd
 	 * @param Utilisateur
-	 * @return Vector<Categorie>
-	 * @throws CategorieException
+	 * @return Vector<Spectacle>
+	 * @throws SpectacleException
 	 * @throws ExceptionConnexion
 	 */
-	public static Vector<Categorie> getCategorie (Utilisateur user)
-	throws CategorieException, ExceptionConnexion {
-		Vector<Categorie> res = new Vector<Categorie>();
+	public static Vector<Representation> getRepresentation (Utilisateur user)
+	throws RepresentationException, ExceptionConnexion {
+		Vector<Representation> res = new Vector<Representation>();
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "select nomc, prix from LesCategories order by nomc";
-		//requete = "select * from LesCategories";
+		requete = "select numS, dateRep from LesRepresentations order by dateRep";
+		//requete = "select * from LesSpectacles";
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			while (rs.next()) {
-				res.addElement(new Categorie (rs.getString(1), rs.getFloat(2)));
+				res.addElement(new Representation (rs.getInt(1), rs.getString(2)));
 			}
 		} catch (SQLException e) {
-			throw new CategorieException (" Problème dans l'interrogation des catégories.."
+			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -51,21 +51,21 @@ public class BDCategories {
 	
 	
 	
-	public static void setCategorie (Utilisateur user, String n, int num)
-	throws CategorieException, ExceptionConnexion {
+	public static void setRepresentation (Utilisateur user, int num, String date)
+	throws RepresentationException, ExceptionConnexion {
 		String requete ;
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "insert into LesCategories values ('"+n+"', '"+num+"')";
+		requete = "insert into LesRepresentation values ('"+num+"', '"+n+"')";
 		System.out.println(requete);
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(requete);
 			
 		} catch (SQLException e) {
-			throw new CategorieException (" Problème dans l'interrogation des catégories.."
+			throw new RepresentationException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}
@@ -73,8 +73,9 @@ public class BDCategories {
 
 	}
 	
-	public static Vector<Categorie> executerRequete(Utilisateur user, String requete)throws CategorieException, ExceptionConnexion{
-		Vector<Categorie> res = new Vector<Categorie>();		
+	
+	public static Vector<Spectacle> executerRequete(Utilisateur user, String requete)throws SpectacleException, ExceptionConnexion{
+		Vector<Spectacle> res = new Vector<Spectacle>();		
 		Statement stmt ;
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
@@ -84,15 +85,15 @@ public class BDCategories {
 			rs = stmt.executeQuery(requete);
 			if (!requete.contains("select")) {
 				BDConnexion.FermerTout(conn, stmt, rs);
-				return res;
+				return null;
 			}else{
 				while (rs.next()) {
-					res.addElement(new Categorie (rs.getString(1), rs.getFloat(2)));
+					res.addElement(new Spectacle (rs.getInt(1), rs.getString(2)));
 				}
 			}
 			
 		} catch (SQLException e) {
-			throw new CategorieException (" Problème dans l'interrogation des catégories.."
+			throw new SpectacleException (" Problème dans l'interrogation des catégories.."
 					+ "Code Oracle " + e.getErrorCode()
 					+ "Message " + e.getMessage());
 		}

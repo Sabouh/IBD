@@ -42,9 +42,9 @@ public class NouvelleRepresentationServlet extends HttpServlet {
 
 	  res.setContentType("text/html");
 
-	  out.println("<HEAD><TITLE> Ajouter une nouvelle reprï¿½sentation </TITLE></HEAD>");
+	  out.println("<HEAD><TITLE> Ajouter une nouvelle représentation </TITLE></HEAD>");
 	  out.println("<BODY bgproperties=\"fixed\" background=\"/images/rideau.JPG\">");
-	  out.println("<font color=\"#FFFFFF\"><h1> Ajouter une nouvelle repr&eacute;sentation </h1>");
+	  out.println("<font color=\"#FFFFFF\"><h1> Ajouter une nouvelle représentation </h1>");
 
 	  numS		= req.getParameter("numS");
 	  dateS		= req.getParameter("date");
@@ -71,6 +71,11 @@ public class NouvelleRepresentationServlet extends HttpServlet {
 		// Transformation des paramï¿½tres vers les types adï¿½quats.
 	  	// Ajout de la nouvelle reprï¿½sentation.
 	  	// Puis construction dynamique d'une page web de rï¿½ponse.
+		Utilisateur user = Utilitaires.Identification();
+		if(user!=null){
+			//A TERMINER
+			BDRepresentations.setRepresentation(user,Integer.parseInt(numS),dateS);
+		}
 	  	out.println("<p><i><font color=\"#FFFFFF\">A compl&eacute;ter</i></p>");
 	  	out.println("<p><i><font color=\"#FFFFFF\">...</i></p>");
 	  }

@@ -3,9 +3,9 @@ package modele;
 public class Representation {
 
 	private int numS;
-	private int date;
+	private String date;
 	
-	public Representation (int numS, int date) {
+	public Representation (int numS, String date) {
 		this.numS = numS;
 		this.date = date;
 	}
@@ -14,7 +14,7 @@ public class Representation {
 		return this.numS;
 	}
 	
-	public int getDate(){
+	public String getDate(){
 	 	return this.date;
 	}
 	
@@ -22,7 +22,7 @@ public class Representation {
 		this.numS = numS;
 	}
 	
-	public void setDate(int date){
+	public void setDate(String date){
 		this.date = date;
 	}
 }

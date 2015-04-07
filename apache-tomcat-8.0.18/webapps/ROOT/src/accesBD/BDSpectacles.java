@@ -32,7 +32,7 @@ public class BDSpectacles {
 		ResultSet rs ;
 		Connection conn = BDConnexion.getConnexion(user.getLogin(), user.getmdp());
 		
-		requete = "select nomc, prix from LesSpectacles order by nomc";
+		requete = "select numS, nomS from LesSpectacles order by nomS";
 		//requete = "select * from LesSpectacles";
 		try {
 			stmt = conn.createStatement();
